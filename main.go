@@ -14,7 +14,7 @@
 // and substitutes each line into a supplied command line, then
 // executes the resulting commands in parallel across a configured
 // number of concurrent goroutines.
-//  Usage: prun <worker count> <command>
+// Usage: prun <worker count> <command>
 //         <worker count> : The number of worker goroutines to run in parallel
 //         <command> : The command line to run on each supplied input. the
 //                     token '{}' is replaced by each line supplied on stdin.
@@ -31,7 +31,7 @@ import (
     "strconv"
     "strings"
 
-    "github.com/xaevman/lib/app"
+    "github.com/xaevman/app"
 )
 
 // RunJob structures contain all the command line data passed to prun,
